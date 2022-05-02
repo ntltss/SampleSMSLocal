@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CCCCCC">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#FEFEFE"
+        android:gravity="center"
+        android:text="はじめましょう"
+        android:textSize="100px" />
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/my_recycler_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="209dp"-->
+<!--        android:scrollbars="vertical" />-->
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="はじめる"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="bottom"
+            android:background="#339933"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

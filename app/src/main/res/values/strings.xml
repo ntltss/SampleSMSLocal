@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SampleSMSLocal</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="tab_text_1">メンバー</string>
+    <string name="tab_text_2">会話</string>
+    <string name="default_notification_channel_id" translatable="false">my_app_fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">my_app_push_message</string>
+</resources>

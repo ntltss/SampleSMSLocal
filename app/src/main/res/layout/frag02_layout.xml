@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view2"
+        android:layout_width="match_parent"
+        android:layout_height="445dp"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextMessage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:ems="5"
+        android:inputType="textMultiLine|textPersonName"
+        android:lines="3"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/my_recycler_view2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-94dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="送信"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="678dp"
+        app:layout_constraintVertical_bias="5.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="vertical"-->
+<!--    android:background="#CCCCCC">-->
+
+<!--&lt;!&ndash;    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/intentTextView"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="52dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:orientation="vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:text="@string/tab_text_1"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textColor="@android:color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textSize="10sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/intentTextView2"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="66dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:orientation="vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:text="テストメンバー"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textColor="@android:color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textSize="10sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginTop="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:orientation="vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;        >&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <androidx.recyclerview.widget.RecyclerView&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            android:id="@+id/my_recycler_view2"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            android:scrollbars="vertical"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            android:layout_height="200dp"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            android:orientation="vertical"/>&ndash;&gt;&ndash;&gt;-->
+
+
+
+<!--&lt;!&ndash;        <Button&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/button2"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="bottom"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Button" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <EditText&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/editTextMessage"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:ems="10"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:inputType="textMultiLine|textPersonName"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:lines="3"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="bottom"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Name" />&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;    </LinearLayout>&ndash;&gt;-->
+
+
+
+<!--    &lt;!&ndash;    <androidx.recyclerview.widget.RecyclerView&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:id="@+id/my_recycler_view"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_height="209dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:scrollbars="vertical" />&ndash;&gt;-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:weightSum="3">-->
+<!--&lt;!&ndash;        <EditText&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/editText"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:ems="10"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:inputType="textPersonName"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Name" />&ndash;&gt;-->
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/my_recycler_view2"-->
+<!--                    android:scrollbars="vertical"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"/>-->
+
+<!--&lt;!&ndash;            <androidx.recyclerview.widget.RecyclerView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/my_recycler_view"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="209dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:scrollbars="vertical" />&ndash;&gt;-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextMessage"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textMultiLine|textPersonName"-->
+<!--            android:lines="10"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:text="Name" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dip"-->
+<!--        android:gravity="bottom"-->
+<!--        android:layout_weight="1"-->
+<!--        android:orientation="vertical">-->
+
+<!--&lt;!&ndash;                <EditText&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/editTextMessage"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ems="10"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:inputType="textMultiLine|textPersonName"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:lines="3"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_gravity="bottom"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Name" />&ndash;&gt;-->
+
+<!--    </LinearLayout>-->
+
+
+<!--</LinearLayout>-->
+
+
+
+<!--&lt;!&ndash;<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+<!--&lt;!&ndash;    xmlns:app="http://schemas.android.com/apk/res-auto"&ndash;&gt;-->
+<!--&lt;!&ndash;    xmlns:tools="http://schemas.android.com/tools"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:layout_height="match_parent">&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/textView3"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:text="@string/tab_text_2"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textColor="@android:color/holo_green_dark"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textSize="100sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/intentTextView2"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:text="TextView"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintBottom_toTopOf="@+id/textView3"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintHorizontal_bias="0.5"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintTop_toBottomOf="@+id/textView3" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;</androidx.constraintlayout.widget.ConstraintLayout>&ndash;&gt;-->
